@@ -4,6 +4,8 @@ import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import AppServerModule from './src/main.server';
+import bootstrap from './src/main.server';
+
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {

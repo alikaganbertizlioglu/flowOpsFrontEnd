@@ -99,15 +99,28 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.json",
+                "input": "src/assets/i18n/",
+                "output": "/assets/i18n/"
+              }
+              
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery/dist/jquery.js",
+              "../node_modules/tether/dist/js/tether.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c11c8511-28ee-45f9-a121-b1f66f5fe9f5"
   }
 }
