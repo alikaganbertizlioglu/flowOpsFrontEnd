@@ -1,12 +1,20 @@
-<div class="container" >
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    
-
+<div class="container">
+  <!-- First Line: Title and Description -->
+  <header class="d-flex flex-wrap justify-content-center align-items-center py-3">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-2"><b>FlowOps </b>{{'PROJECT_DESCRIPTION'|translate}}</span>
+      <span class="fs-2 text-center"><b>FlowOps </b>{{'PROJECT_DESCRIPTION'|translate}}</span>
     </a>
+    <span class="mode-label ms-2" id="modeLabel">{{ isDarkMode() ? 'Dark Mode' : 'Light Mode' }}</span>
 
+    <label class="switch">
+      <input style="display: none;" type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode()" />
+      <span class="slider"></span>
+    </label>
+  </header>
+  
+
+  <!-- Second Line: List Elements and Checkbox -->
+  <header class="d-flex flex-wrap justify-content-center py-1 mb- border-bottom">
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">{{'HOME' | translate}}</a></li>
       <li class="nav-item"><a href="#" class="nav-link">{{'FEATURES' | translate}}</a></li>
@@ -14,10 +22,5 @@
       <li class="nav-item"><a href="#" class="nav-link">{{'FAQS' | translate}}</a></li>
       <li class="nav-item"><a href="#" class="nav-link">{{'ABOUT' | translate}}</a></li>
     </ul>
-
-    <label class="switch">
-      <input style="display: none;" type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode()" />
-      <span class="slider"></span>
-    </label>
   </header>
 </div>
