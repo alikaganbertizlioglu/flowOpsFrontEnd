@@ -1,14 +1,9 @@
-<div class="btn-group" dropdown>
-    <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-            aria-controls="dropdown-animated">
-      Button dropdown <span class="caret"></span>
-    </button>
-    <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu"
-        role="menu" aria-labelledby="button-animated">
-      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
-      </li>
-      <li role="menuitem"><a class="dropdown-item" href="#">Something else
-        here</a></li>
-    </ul>
+<div ngbDropdown class="d-inline-block">
+  <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+    Toggle dropdown
+  </button>
+  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+    <button ngbDropdownItem>Action - 1</button>
+    <button ngbDropdownItem>Another Action</button>
+    <button ngbDropdownItem>Something else is here</button>
   </div>
