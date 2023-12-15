@@ -5,22 +5,24 @@
       <span class="fs-2 text-center"><b>FlowOps </b>{{'PROJECT_DESCRIPTION'|translate}}</span>
     </a>
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link">{{'LOGIN' | translate}}</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">{{'REGISTER' | translate}}</a></li>
+      <li class="nav-item"><a (click)="navigateToLogin()" class="nav-link">{{'LOGIN' | translate}}</a></li>
+      <li class="nav-item"><a (click)="navigateToRegister()" class="nav-link">{{'REGISTER' | translate}}</a></li>
       <li class="nav-item">
         <!-- Language Dropdown -->
         <div ngbDropdown class="d-inline-block">
           <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-            Toggle dropdown
+            {{'LANGUAGE' | translate}}
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
+            <button ngbDropdownItem (click)="switchToEN()">EN</button>
+            <button ngbDropdownItem (click)="switchToTR()">TR</button>
           </div>
         </div>
       </li>
     </ul>
+    
+    <!-- Dark Mode Toggle -->
+    <sub id=themeText >Dark Mode</sub>
     <label class="switch">
       <input style="display: none;" type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode()" />
       <span class="slider"></span>

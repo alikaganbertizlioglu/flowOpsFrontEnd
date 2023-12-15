@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ThemeService } from '../../services/theme/theme.service';
 import { TranslationService } from '../../services/translate/translation.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -8,11 +10,16 @@ import { TranslationService } from '../../services/translate/translation.service
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private themeService: ThemeService, private translateService: TranslationService) { }
+  constructor(private themeService: ThemeService, private translateService: TranslationService, private router: Router) { }
 
-  switchLanguage() {
-    this.translateService.switchLanguage();
+  switchToEN() {
+    this.translateService.switchToEN();
   }
+
+  switchToTR() {
+    this.translateService.switchToTR();
+  }
+
   toggleTheme() {
     this.themeService.toggleTheme();
   }
@@ -20,7 +27,13 @@ export class HeaderComponent {
   isDarkMode(): boolean {
     return this.themeService.isDarkMode();
   }
-  deneme(){
-    console.log("test");
+  
+  navigateToLogin() {
+    this.router.navigate(['/login']);
   }
+
+  navigateToRegister() {
+    this.router.navigate(['/register']);
+  }
+  
 }

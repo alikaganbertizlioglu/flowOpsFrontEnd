@@ -11,7 +11,11 @@ export class TranslationService {
     translateService.use('en');
   }
 
-  switchLanguage() {
-    this.translateService.use(this.translateService.currentLang === 'en' ? 'tr' : 'en');
+  switchToEN() {
+    this.translateService.use('en');
+  }
+
+  switchToTR() {
+    this.translateService.use('tr');
   }
 }
