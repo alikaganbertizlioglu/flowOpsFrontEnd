@@ -22,6 +22,10 @@
   "AGREE_TO_TERMS": "I agree to the terms and conditions",
   "ALREADY_HAVE_ACCOUNT": "Already have an account?",
   "ENTER_YOUR_NAME": "Enter your full name",
-  "FULL_NAME": "Full Name"
+  "FULL_NAME": "Full Name",
+  "ENTER_BIRTHDATE": "Enter your birthdate",
+  "BIRTHDATE": "Birthdate",
+  "ENTER_ADDRESS": "Enter your address",
+  "ADDRESS": "Address"
 
 }

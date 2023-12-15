@@ -22,5 +22,11 @@
     "AGREE_TO_TERMS": "Şartlara ve koşullara katılıyorum",
     "ALREADY_HAVE_ACCOUNT": "Zaten hesabınız var mı?",
     "ENTER_YOUR_NAME": "Adınızı girin",
-    "FULL_NAME": "Tam Ad"
+    "FULL_NAME": "Tam Ad",
+    "BIRTHDATE": "Doğum Tarihi",
+    "ENTER_BIRTHDATE": "Doğum tarihinizi girin",
+    "ENTER_ADDRESS": "Adresinizi girin",
+    "ADDRESS": "Adress"
+
+
 }
