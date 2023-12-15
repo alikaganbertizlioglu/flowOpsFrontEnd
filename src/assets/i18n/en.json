@@ -1,5 +1,4 @@
 {
-  "GREETING": "Hello, World!",
   "HOME": "Home",
   "ABOUT": "About",
   "CONTACT": "Contact",
@@ -10,5 +9,19 @@
   "PROJECT_DESCRIPTION": "Form and Workflow Automation Tool",
   "LOGIN":"Login",
   "REGISTER":"Register",
-  "LANGUAGE":"Language"
+  "LANGUAGE":"Language",
+  "EMAIL_ADDRESS": "Email address",
+  "ENTER_VALID_EMAIL": "Enter a valid email address",
+  "PASSWORD": "Password",
+  "ENTER_PASSWORD": "Enter password",
+  "REMEMBER_ME": "Remember me",
+  "FORGOT_PASSWORD": "Forgot password?",
+  "DONT_HAVE_ACCOUNT": "Don't have an account?",
+  "ENTER_VALID_EMAIL_PLACEHOLDER": "Enter a valid email address",
+  "ENTER_PASSWORD_PLACEHOLDER": "Enter password",
+  "AGREE_TO_TERMS": "I agree to the terms and conditions",
+  "ALREADY_HAVE_ACCOUNT": "Already have an account?",
+  "ENTER_YOUR_NAME": "Enter your full name",
+  "FULL_NAME": "Full Name"
+
 }

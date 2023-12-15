@@ -1,5 +1,4 @@
 {
-    "GREETING": "Selamın Aleyküm !!",
     "HOME": "Ana Sayfa",
     "ABOUT": "Hakkında",
     "CONTACT": "İletişim",
@@ -8,8 +7,20 @@
     "PRICING": "Fiyatlandırma",
     "FAQS": "SSS",
     "PROJECT_DESCRIPTION": "Form ve İş Akışı Otomasyon Aracı",
-    "LOGIN":"Giriş Yap",
-    "REGISTER":"Kayıt Ol",
-    "LANGUAGE":"Dil"
-
+    "LOGIN": "Giriş Yap",
+    "REGISTER": "Kayıt Ol",
+    "LANGUAGE": "Dil",
+    "EMAIL_ADDRESS": "E-posta adresi",
+    "ENTER_VALID_EMAIL": "Geçerli bir e-posta adresi girin",
+    "PASSWORD": "Şifre",
+    "ENTER_PASSWORD": "Şifre girin",
+    "REMEMBER_ME": "Beni hatırla",
+    "FORGOT_PASSWORD": "Şifremi unuttum",
+    "DONT_HAVE_ACCOUNT": "Hesabınız yok mu?",
+    "ENTER_VALID_EMAIL_PLACEHOLDER": "Geçerli bir e-posta adresi girin",
+    "ENTER_PASSWORD_PLACEHOLDER": "Şifre girin",
+    "AGREE_TO_TERMS": "Şartlara ve koşullara katılıyorum",
+    "ALREADY_HAVE_ACCOUNT": "Zaten hesabınız var mı?",
+    "ENTER_YOUR_NAME": "Adınızı girin",
+    "FULL_NAME": "Tam Ad"
 }

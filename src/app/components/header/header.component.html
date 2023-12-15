@@ -10,15 +10,16 @@
       <li class="nav-item">
         <!-- Language Dropdown -->
         <div ngbDropdown class="d-inline-block">
-          <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+          <button type="button" class="btn btn-sm btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
             {{'LANGUAGE' | translate}}
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem (click)="switchToEN()">EN</button>
-            <button ngbDropdownItem (click)="switchToTR()">TR</button>
+            <button ngbDropdownItem (click)="switchToEN()">English - EN</button>
+            <button ngbDropdownItem (click)="switchToTR()">Türkçe - TR</button>
           </div>
         </div>
       </li>
+      
     </ul>
     
     <!-- Dark Mode Toggle -->
