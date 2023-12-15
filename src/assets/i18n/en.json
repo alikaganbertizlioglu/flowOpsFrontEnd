@@ -7,5 +7,8 @@
   "FEATURES": "Features",
   "PRICING": "Pricing",
   "FAQS": "FAQs",
-  "PROJECT_DESCRIPTION": "Form and Workflow Automation Tool"
+  "PROJECT_DESCRIPTION": "Form and Workflow Automation Tool",
+  "LOGIN":"Login",
+  "REGISTER":"Register",
+  "LANGUAGE":"Language"
 }

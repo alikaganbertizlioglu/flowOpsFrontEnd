@@ -7,5 +7,9 @@
     "FEATURES": "Özellikler",
     "PRICING": "Fiyatlandırma",
     "FAQS": "SSS",
-    "PROJECT_DESCRIPTION": "Form ve İş Akışı Otomasyon Aracı"
+    "PROJECT_DESCRIPTION": "Form ve İş Akışı Otomasyon Aracı",
+    "LOGIN":"Giriş Yap",
+    "REGISTER":"Kayıt Ol",
+    "LANGUAGE":"Dil"
+
 }
