@@ -1,24 +1,25 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="formData.name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="formData.email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" name="message" [(ngModel)]="formData.message" rows="4" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+            <label for="name">{{ 'FULL_NAME' | translate }}</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="formData.name" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">{{ 'EMAIL_ADDRESS' | translate }}</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="message">{{ 'ENTER_MESSAGE' | translate }}</label>
+            <textarea class="form-control" id="message" name="message" [(ngModel)]="formData.message" rows="4" required></textarea>
+          </div>
+  
+          <button style="margin-top: 20px;" type="submit" class="btn btn-primary">{{ 'SUBMIT' | translate }}</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+  

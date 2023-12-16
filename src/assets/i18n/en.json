@@ -28,5 +28,7 @@
   "ENTER_ADDRESS": "Enter your address",
   "ADDRESS": "Address",
   "DARK_THEME_TEXT": "Dark Mode",
-  "CONTACT_US": "Contact Us"
+  "CONTACT_US": "Contact Us",
+  "ENTER_MESSAGE": "Enter your message",
+  "SUBMIT": "Submit"
 }
