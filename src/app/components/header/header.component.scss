@@ -53,3 +53,7 @@ input:checked + .slider:before {
 }
 
 
+.nav-pills .nav-item.passive span.nav-link {
+  color: #6c757d;       /* Gray color for passive state */
+  text-decoration: line-through;
+}
