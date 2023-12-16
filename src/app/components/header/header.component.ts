@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
   constructor(private themeService: ThemeService, private translateService: TranslationService, private router: Router) { }
 
   switchToEN() {
@@ -27,7 +28,7 @@ export class HeaderComponent {
   isDarkMode(): boolean {
     return this.themeService.isDarkMode();
   }
-  
+
   navigateToLogin() {
     this.router.navigate(['/login']);
   }
@@ -35,5 +36,7 @@ export class HeaderComponent {
   navigateToRegister() {
     this.router.navigate(['/register']);
   }
-  
+  navigateToContact() {
+    this.router.navigate(['/contact']);
+  }
 }

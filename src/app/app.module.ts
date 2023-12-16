@@ -17,6 +17,8 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -33,7 +35,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     RouterModule,
     AppRoutingModule,
-
+    FormsModule
   ],
   providers: [
     provideClientHydration()
