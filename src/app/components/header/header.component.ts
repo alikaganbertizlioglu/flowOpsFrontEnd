@@ -39,4 +39,7 @@ export class HeaderComponent {
   navigateToContact() {
     this.router.navigate(['/contact']);
   }
+  navigateToDemo() {
+    this.router.navigate(['/demo']);
+  }
 }

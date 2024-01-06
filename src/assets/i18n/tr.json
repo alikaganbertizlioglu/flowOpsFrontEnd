@@ -30,5 +30,7 @@
     "DARK_THEME_TEXT": "Koyu Mod",
     "CONTACT_US": "Bize Ulaşın",
     "SUBMIT" : "Gönder",
-    "ENTER_MESSAGE": "Mesajınızı girin"
+    "ENTER_MESSAGE": "Mesajınızı girin",
+    "REASON_FOR_LEAVE":"İzin Gerekçesi",
+    "PERMISSION_RANGE":"İzin Aralığı"
 }

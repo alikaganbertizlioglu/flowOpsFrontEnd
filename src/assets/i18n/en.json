@@ -30,5 +30,7 @@
   "DARK_THEME_TEXT": "Dark Mode",
   "CONTACT_US": "Contact Us",
   "ENTER_MESSAGE": "Enter your message",
-  "SUBMIT": "Submit"
+  "SUBMIT": "Submit",
+  "REASON_FOR_LEAVE":"Reason for permission",
+  "PERMISSION_RANGE":"Permission range"
 }
