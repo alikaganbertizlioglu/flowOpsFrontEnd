@@ -19,7 +19,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
-
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+import { DemoComponent } from './components/demo/demo.component';
 
 
 
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent,
     RegisterComponent,
     MaintenanceComponent,
-    ContactComponent
+    ContactComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +57,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxDaterangepickerMd.forRoot()
+    
   ],
   providers: [
     provideClientHydration()
