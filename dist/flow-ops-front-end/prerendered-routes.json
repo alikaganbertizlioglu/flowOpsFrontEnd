@@ -1,5 +1,12 @@
 {
   "routes": [
-    "/"
+    "/contact",
+    "/dashboard",
+    "/demo",
+    "/home",
+    "/login",
+    "/maintenance",
+    "/pricing",
+    "/register"
   ]
 }
