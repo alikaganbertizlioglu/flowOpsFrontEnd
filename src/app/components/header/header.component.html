@@ -1,4 +1,4 @@
-<div>
+<div class="container">
   <!-- First Line: Title and Description -->
   <header class="d-flex flex-wrap justify-content-center align-items-center py-3">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -23,14 +23,24 @@
     </ul>
     
     <!-- Dark Mode Toggle -->
-    <div style="margin-right: 1%;">
-      <sub id=themeText >{{'DARK_THEME_TEXT' | translate}}</sub>
-      <label class="switch">
-        <input style="display: none;" type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode()" />
-        <span class="slider"></span>
-      </label>
-    </div>
-    
+    <sub id=themeText >{{'DARK_THEME_TEXT' | translate}}</sub>
+    <label class="switch">
+      <input style="display: none;" type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode()" />
+      <span class="slider"></span>
+    </label>
+  </header>
+  <!-- Second Line: List Elements and Checkbox -->
+  <header class="d-flex flex-wrap justify-content-center py-1 mb- border-bottom">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">{{'HOME' | translate}}</a></li>
+      <li class="nav-item"><a class="nav-link" (click)="navigateToContact()">{{'CONTACT' | translate}}</a></li>
+      <li class="nav-item"><a class="nav-link " (click)="navigateToDemo()" >{{'Demo' | translate}}</a></li>
+      <li class="nav-item passive"><span class="nav-link">{{'FEATURES' | translate}}</span></li>
+      <li class="nav-item passive"><span class="nav-link">{{'PRICING' | translate}}</span></li>
+      <li class="nav-item passive"><span class="nav-link">{{'FAQS' | translate}}</span></li>
+      <li class="nav-item passive"><span class="nav-link">{{'ABOUT' | translate}}</span></li>
+      
+    </ul>
   </header>
 </div>
 
