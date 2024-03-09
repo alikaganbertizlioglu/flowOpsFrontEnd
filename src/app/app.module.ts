@@ -22,8 +22,6 @@ import { FormsModule } from '@angular/forms';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { DemoComponent } from './components/demo/demo.component';
 
-
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
