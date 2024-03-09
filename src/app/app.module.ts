@@ -24,8 +24,6 @@ import { DemoComponent } from './components/demo/demo.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 
-
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
