@@ -21,6 +21,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { DemoComponent } from './components/demo/demo.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,7 +38,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     RegisterComponent,
     MaintenanceComponent,
     ContactComponent,
-    DemoComponent
+    DemoComponent,
+    DashboardComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,
