@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { FormCreatorComponent } from './components/form-creator/form-creator.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'demo', component: DemoComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'pricing', component: PricingComponent },
+  { path: 'form-creator', component: FormCreatorComponent },
   { path: '', redirectTo: '/maintenance', pathMatch: 'full' },
 ];
 

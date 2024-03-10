@@ -1,0 +1,59 @@
+<p>form-creator works!</p>
+<div class="question_form">
+    <br>
+    <div class="section">
+        <div class="question_title_section">
+            <div class="question_form_top">
+                <input type="text" class="question_form_top_name" style="color:black" placeholder="Başlıksız Form">
+                <input type="text" class="quesiton_form_top_desc" placeholder="Form Açıklaması"
+                    placerholder="Form Description">
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-12">
+                <div class="question_answer_area" *ngFor="let question of questions;let questionIndex = index" >
+                    <div class="row">
+                        <div class="col-9">
+                            <input [(ngModel)]="question.questionText" ngVal type="text" class="form-control" placeholder="Lütfen sorunuzu giriniz">
+                        </div>
+                        <div class="col-3">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-secondary" ngbDropdownToggle>
+                                    Cevap Türünü Seç
+                                </button>
+                                <div ngbDropdownMenu>
+                                    <button ngbDropdownItem>Yazı girişi</button>
+                                    <button ngbDropdownItem>Çoktan seçmeli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button type="button" class="btn btn-secondary" (click)="addAnswer(questionIndex)">Cevap ekle</button>
+                        </div>
+                        <div *ngFor="let answer of question.answers; let answerIndex=index;" class="col-12" style="padding-top: 10px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Cevabı giriniz">
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-secondary" (click)="removeAnswer(questionIndex, answerIndex)">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button style="margin-top: 10px;" type="button" class="btn btn-primary" (click)="addQuestion()" >Soru ekle</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
