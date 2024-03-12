@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'form-creator', component: FormCreatorComponent },
-  { path: '', redirectTo: '/maintenance', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
