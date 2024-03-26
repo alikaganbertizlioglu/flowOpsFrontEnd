@@ -3,10 +3,11 @@
     "/contact",
     "/dashboard",
     "/demo",
+    "/form-creator",
     "/home",
     "/login",
     "/maintenance",
-    "/pricing",
-    "/register"
+    "/register",
+    "/templates"
   ]
 }

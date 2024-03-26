@@ -23,6 +23,11 @@ import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { DemoComponent } from './components/demo/demo.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormCreatorComponent } from './components/form-creator/form-creator.component';
+import { TemplatesComponent } from './components/templates/templates.component';
+import { AnnualLeaveFormComponent } from './components/annual-leave-form/annual-leave-form.component';
+
+
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -40,7 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     DemoComponent,
     DashboardComponent,
-    FormCreatorComponent
+    FormCreatorComponent,
+    TemplatesComponent,
+    AnnualLeaveFormComponent,
   ],
   imports: [
     BrowserModule,
