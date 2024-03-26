@@ -9,6 +9,7 @@ import { DemoComponent } from './components/demo/demo.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TemplatesComponent } from './components/templates/templates.component';
 import { AnnualLeaveFormComponent } from './components/annual-leave-form/annual-leave-form.component';
+import { VacationRequestFormComponent } from './components/vacation-request-form/vacation-request-form.component';
 import { FormCreatorComponent } from './components/form-creator/form-creator.component';
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'templates', component: TemplatesComponent },
   { path: 'form-creator', component: FormCreatorComponent },
   { path: 'annual-leave-form', component: AnnualLeaveFormComponent},
+  { path: 'vacation-request-form', component: VacationRequestFormComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

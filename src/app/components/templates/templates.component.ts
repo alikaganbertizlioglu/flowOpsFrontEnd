@@ -17,5 +17,9 @@ export class TemplatesComponent {
     this.router.navigate(['/annual-leave-form']);
   }
 
+  navigateToVacationRequestForm(){
+    this.router.navigate(['/vacation-request-form']);
+  }
+
 
 }
