@@ -10,7 +10,7 @@ export class TemplatesComponent {
   constructor(private router: Router) {}
 
   navigateToDestination() {
-    this.router.navigate(['/home']); // Navigate to destination component
+    this.router.navigate(['/home']); 
   }
 
   navigateToAnnualLeaveForm() {
@@ -19,6 +19,10 @@ export class TemplatesComponent {
 
   navigateToVacationRequestForm(){
     this.router.navigate(['/vacation-request-form']);
+  }
+
+  navigateToResignationForm(){
+    this.router.navigate(['/resignation-form']);
   }
 
 
