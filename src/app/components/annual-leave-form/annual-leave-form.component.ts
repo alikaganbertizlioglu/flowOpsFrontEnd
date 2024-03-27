@@ -14,7 +14,8 @@ export class AnnualLeaveFormComponent {
     izinGunSayisi: 0,
     izinBaslangicTarihi: '',
     izinBitisTarihi: '',
-    goreveBaslayacagiTarih: ''
+    goreveBaslayacagiTarih: '',
+    gonderilecekKisi:''
   };
 
   submitForm() {

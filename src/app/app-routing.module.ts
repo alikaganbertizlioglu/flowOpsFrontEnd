@@ -12,6 +12,7 @@ import { AnnualLeaveFormComponent } from './components/annual-leave-form/annual-
 import { VacationRequestFormComponent } from './components/vacation-request-form/vacation-request-form.component';
 import { FormCreatorComponent } from './components/form-creator/form-creator.component';
 import { ResignationFormComponent } from './components/resignation-form/resignation-form.component';
+import { EmployeeMotivationFormComponent } from './components/employee-motivation-form/employee-motivation-form.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'annual-leave-form', component: AnnualLeaveFormComponent},
   { path: 'vacation-request-form', component: VacationRequestFormComponent},
   {path: 'resignation-form',component: ResignationFormComponent},
+  {path: 'employee-motivation-form', component: EmployeeMotivationFormComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

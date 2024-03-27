@@ -1,0 +1,284 @@
+
+<form (ngSubmit)="submitForm()" class="container mt-5">
+    <h2>Çalışan Motivasyon Formu:</h2>
+
+
+    
+    <div class="form-group mb-3">
+        <label  for="nameSurname">İsim Soyisim:</label>
+        <input type="text" id="nameSurname" name="nameSurname" [(ngModel)]="formData.nameSurname" class="form-control" required>
+    </div>
+    
+    <div class="form-group mb-3">
+        <label  for="tcNumber">T.C. Kimlik Numarası:</label>
+        <input type="text" id="tcNumber" name="tcNumber" [(ngModel)]="formData.tcNumber" class="form-control" required>
+    </div>
+    
+    <div class="form-group mb-3">
+        <label  for="workplacePosition">Çalışma Yeri ve Görevi:</label>
+        <input type="text" id="workplacePosition" name="workplacePosition" [(ngModel)]="formData.workplacePosition" class="form-control" required>
+    </div>
+
+
+    <div class="form-group mb-3">
+        <label class = font-large>Ne zamandır bu şirkette çalışıyorsunuz?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="1-6months" name="duration" [(ngModel)]="formData.selectedDuration" value="1-6 months">
+            <label class="form-check-label" for="1-6months">1-6 months</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="6-12months" name="duration" [(ngModel)]="formData.selectedDuration" value="6-12 months">
+            <label class="form-check-label" for="6-12months">6-12 months</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="12-24months" name="duration" [(ngModel)]="formData.selectedDuration" value="12-24 months">
+            <label class="form-check-label" for="12-24months">12-24 months</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="moreThan2years" name="duration" [(ngModel)]="formData.selectedDuration" value="more than 2 years">
+            <label class="form-check-label" for="moreThan2years">More than 2 years</label>
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group mb-3">
+        <label class="mb-2" class = font-large>İşiniz ne kadar zorlayıcı? (1 kolay - 10 zor)</label>
+        <div class="row">
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty1" name="difficulty" [(ngModel)]="formData.difficulty" value="1">
+                    <label class="form-check-label ml-2" for="difficulty1"></label>
+                    <span class="radio-label">1</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty2" name="difficulty" [(ngModel)]="formData.difficulty" value="2">
+                    <label class="form-check-label ml-2" for="difficulty2"></label>
+                    <span class="radio-label">2</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty3" name="difficulty" [(ngModel)]="formData.difficulty" value="3">
+                    <label class="form-check-label ml-2" for="difficulty3"></label>
+                    <span class="radio-label">3</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty4" name="difficulty" [(ngModel)]="formData.difficulty" value="4">
+                    <label class="form-check-label ml-2" for="difficulty4"></label>
+                    <span class="radio-label">4</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty5" name="difficulty" [(ngModel)]="formData.difficulty" value="5">
+                    <label class="form-check-label ml-2" for="difficulty5"></label>
+                    <span class="radio-label">5</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty6" name="difficulty" [(ngModel)]="formData.difficulty" value="6">
+                    <label class="form-check-label ml-2" for="difficulty6"></label>
+                    <span class="radio-label">6</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty7" name="difficulty" [(ngModel)]="formData.difficulty" value="7">
+                    <label class="form-check-label ml-2" for="difficulty7"></label>
+                    <span class="radio-label">7</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty8" name="difficulty" [(ngModel)]="formData.difficulty" value="8">
+                    <label class="form-check-label ml-2" for="difficulty8"></label>
+                    <span class="radio-label">8</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty9" name="difficulty" [(ngModel)]="formData.difficulty" value="9">
+                    <label class="form-check-label ml-2" for="difficulty9"></label>
+                    <span class="radio-label">9</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="difficulty10" name="difficulty" [(ngModel)]="formData.difficulty" value="10">
+                    <label class="form-check-label ml-2" for="difficulty10"></label>
+                    <span class="radio-label">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group mb-3">
+        <label class="mb-2" class = font-large>İşinize ne kadar konsantre olabiliyorsunuz? (1 kolay - 10 zor)</label>
+        <div class="row">
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus1" name="focus" [(ngModel)]="formData.focus" value="1">
+                    <label class="form-check-label ml-2" for="focus1"></label>
+                    <span class="radio-label">1</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus2" name="focus" [(ngModel)]="formData.focus" value="2">
+                    <label class="form-check-label ml-2" for="focus2"></label>
+                    <span class="radio-label">2</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus3" name="focus" [(ngModel)]="formData.focus" value="3">
+                    <label class="form-check-label ml-2" for="focus3"></label>
+                    <span class="radio-label">3</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus4" name="focus" [(ngModel)]="formData.focus" value="4">
+                    <label class="form-check-label ml-2" for="focus4"></label>
+                    <span class="radio-label">4</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus5" name="focus" [(ngModel)]="formData.focus" value="5">
+                    <label class="form-check-label ml-2" for="focus5"></label>
+                    <span class="radio-label">5</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus6" name="focus" [(ngModel)]="formData.focus" value="6">
+                    <label class="form-check-label ml-2" for="focus6"></label>
+                    <span class="radio-label">6</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus7" name="focus" [(ngModel)]="formData.focus" value="7">
+                    <label class="form-check-label ml-2" for="focus7"></label>
+                    <span class="radio-label">7</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus8" name="focus" [(ngModel)]="formData.focus" value="8">
+                    <label class="form-check-label ml-2" for="focus8"></label>
+                    <span class="radio-label">8</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus9" name="focus" [(ngModel)]="formData.focus" value="9">
+                    <label class="form-check-label ml-2" for="focus9"></label>
+                    <span class="radio-label">9</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="focus10" name="focus" [(ngModel)]="formData.focus" value="10">
+                    <label class="form-check-label ml-2" for="focus10"></label>
+                    <span class="radio-label">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="form-group mb-3">
+        <label class="mb-2" class = font-large>İşinizden ne kadar memnunsunuz? (1 az 10 çok)</label>
+        <div class="row">
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied1" name="satisfied" [(ngModel)]="formData.satisfied" value="1">
+                    <label class="form-check-label ml-2" for="satisfied1"></label>
+                    <span class="radio-label">1</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied2" name="satisfied" [(ngModel)]="formData.satisfied" value="2">
+                    <label class="form-check-label ml-2" for="satisfied2"></label>
+                    <span class="radio-label">2</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied3" name="satisfied" [(ngModel)]="formData.satisfied" value="3">
+                    <label class="form-check-label ml-2" for="satisfied3"></label>
+                    <span class="radio-label">3</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied4" name="satisfied" [(ngModel)]="formData.satisfied" value="4">
+                    <label class="form-check-label ml-2" for="satisfied4"></label>
+                    <span class="radio-label">4</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied5" name="satisfied" [(ngModel)]="formData.satisfied" value="5">
+                    <label class="form-check-label ml-2" for="satisfied5"></label>
+                    <span class="radio-label">5</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied6" name="satisfied" [(ngModel)]="formData.satisfied" value="6">
+                    <label class="form-check-label ml-2" for="satisfied6"></label>
+                    <span class="radio-label">6</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied7" name="satisfied" [(ngModel)]="formData.satisfied" value="7">
+                    <label class="form-check-label ml-2" for="satisfied7"></label>
+                    <span class="radio-label">7</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied8" name="satisfied" [(ngModel)]="formData.satisfied" value="8">
+                    <label class="form-check-label ml-2" for="satisfied8"></label>
+                    <span class="radio-label">8</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied9" name="satisfied" [(ngModel)]="formData.satisfied" value="9">
+                    <label class="form-check-label ml-2" for="satisfied9"></label>
+                    <span class="radio-label">9</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-auto">
+                <div class="form-check">
+                    <input class="form-check-input large-radio" type="radio" id="satisfied10" name="satisfied" [(ngModel)]="formData.satisfied" value="10">
+                    <label class="form-check-label ml-2" for="satisfied10"></label>
+                    <span class="radio-label">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+      <button type="submit" class="btn btn-primary">Gönder</button>
+    </form>
+    

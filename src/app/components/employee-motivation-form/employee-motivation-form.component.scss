@@ -1,0 +1,17 @@
+.large-radio {
+    transform: scale(2); /* Increase the size of the radio button */
+    margin-right: -20px; /* Adjust the spacing between radio buttons */
+}
+
+.radio-label {
+    margin-left: 5px; /* Adjust the spacing between radio button and label */
+}
+
+.radio-description {
+    margin-top: 5px; /* Adjust the spacing between radio button and description */
+    display: block; /* Make description appear on a new line */
+}
+
+.font-large {
+    font-size: 1.1rem; /* Adjust the font size as needed */
+}

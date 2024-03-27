@@ -25,5 +25,9 @@ export class TemplatesComponent {
     this.router.navigate(['/resignation-form']);
   }
 
+  navigateToEmployeeMotivationForm(){
+    this.router.navigate(['/employee-motivation-form']);
+  }
+
 
 }

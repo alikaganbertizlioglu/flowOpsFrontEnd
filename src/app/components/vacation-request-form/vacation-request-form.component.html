@@ -1,46 +1,46 @@
 
 <form (ngSubmit)="submitForm()" class="container mt-5">
     <h2>Tatil İzin Formu:</h2>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="nameSurname">İsim Soyisim:</label>
         <input type="text" id="nameSurname" name="nameSurname" [(ngModel)]="formData.nameSurname" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="tcNumber">T.C. Kimlik Numarası:</label>
         <input type="text" id="tcNumber" name="tcNumber" [(ngModel)]="formData.tcNumber" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="workplacePosition">Çalışma Yeri ve Görevi:</label>
         <input type="text" id="workplacePosition" name="workplacePosition" [(ngModel)]="formData.workplacePosition" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="izinTuru">Tatil Bilgisi:</label>
         <input type="text" id="izinTuru" name="izinTuru" [(ngModel)]="formData.tatilBilgisi" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="izinGunSayisi">İzin Gün Sayısı:</label>
         <input type="number" id="izinGunSayisi" name="izinGunSayisi" [(ngModel)]="formData.izinGunSayisi" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="izinBaslangicTarihi">İzin Başlangıç Tarihi:</label>
         <input type="date" id="izinBaslangicTarihi" name="izinBaslangicTarihi" [(ngModel)]="formData.izinBaslangicTarihi" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="izinBitisTarihi">İzin Bitiş Tarihi:</label>
         <input type="date" id="izinBitisTarihi" name="izinBitisTarihi" [(ngModel)]="formData.izinBitisTarihi" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="goreveBaslayacagiTarih">Göreve Başlayacağı Tarih:</label>
         <input type="date" id="goreveBaslayacagiTarih" name="goreveBaslayacagiTarih" [(ngModel)]="formData.goreveBaslayacagiTarih" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="izinGunSayisi">İzin Gün Sayısı:</label>
         <input type="number" id="izinGunSayisi" name="izinGunSayisi" [(ngModel)]="formData.izinGunSayisi" class="form-control" required>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="gonderilecekKisi">Formun Gönderileceği Kişi</label>
         <input type="text" id="gonderilecekKisi" name="gonderilecekKisi" [(ngModel)]="formData.gonderilecekKisi" class="form-control" required>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Gönder</button>
     </form>
     

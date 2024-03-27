@@ -27,6 +27,8 @@ import { TemplatesComponent } from './components/templates/templates.component';
 import { AnnualLeaveFormComponent } from './components/annual-leave-form/annual-leave-form.component';
 import { VacationRequestFormComponent } from './components/vacation-request-form/vacation-request-form.component';
 import { ResignationFormComponent } from './components/resignation-form/resignation-form.component';
+import { EmployeeMotivationFormComponent } from './components/employee-motivation-form/employee-motivation-form.component';
+
 
 
 
@@ -52,6 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AnnualLeaveFormComponent,
     VacationRequestFormComponent,
     ResignationFormComponent,
+    EmployeeMotivationFormComponent,
   ],
   imports: [
     BrowserModule,
